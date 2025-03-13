@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script defer src="script.js"></script>
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    
+    <style>
+        .profile-pic {
+            display: block;
+            margin: 20px auto;
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+        }
+
+        .glow-box {
+            transition: box-shadow 0.3s ease-in-out;
+        }
+
+        .glow-box:hover {
+            box-shadow: 0 0 30px rgba(0, 255, 150, 1);
+        }
+
+        .resume-card {
+            background: rgba(28, 28, 28, 0.9);
+            padding: 20px;
+            border-radius: 10px;
+            text-align: center;
+            box-shadow: 0px 0px 20px rgba(255, 255, 255, 1);
+            transition: 0.3s;
+        }
+
+        .resume-card:hover {
+            box-shadow: 0 0 30px rgba(0, 255, 150, 1);
+        }
+
+        .resume-btn {
+            display: inline-block;
+            padding: 10px 20px;
+            margin-top: 15px;
+            background-color: rgba(0, 255, 150, 0.2);
+            color: white;
+            text-decoration: none;
+            border-radius: 8px;
+            transition: 0.3s;
+            border: 1px solid rgba(0, 255, 150, 1);
+        }
+
+        .resume-btn:hover {
+            background-color: rgba(0, 255, 150, 0.5);
+            box-shadow: 0 0 20px rgba(0, 255, 150, 1);
+        }
+    </style>
+</head>
+<body>
+    <canvas id="animationCanvas"></canvas>
+
+    <header>
+        <h1>PRATIM NAG</h1>
+        <nav>
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#academics">Academics</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#interests">Interests</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#achievements">Achievements</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="about" class="section glow-box">
+        <h2>About Me</h2>
+        <img src="profile.jpg" alt="My Profile Picture" class="profile-pic">
+        <p>Dedicated and driven Computer
+            Science enthusiast with a strong
+            academic background and a
+            passion for technological
+            innovation. Committed to
+            advancing knowledge and making
+            a positive impact in the field of
+            computer science. Demonstrated
+            aptitude for problem-solving,
+            logical reasoning, and algorithmic
+            thinking. Achieved a Computer
+            Engineering scholarship to further
+            enhance my skills, contribute to
+            cutting-edge research, and become
+            a catalyst for positive change in
+            the world of technology.</p>
+    </section>
+
+    <section id="academics" class="section glow-box">
+        <h2>Academic Background</h2>
+        <p>B.E. in Computer Engineering - Gujarat Technological University | 2023 to Running</p>
+        <p>Higher Secondery Certificate - Islamia University College, Bangladesh | Passing Year 2022</p>
+        <p>Secondery School Certificate - St. Placid's School &bCollege | Passing Year 2020</p>
+    </section>
+
+    <section id="experience" class="section glow-box">
+        <h2>Experience</h2>
+        <p>Active member of ‘IDC Cultural Club’ | 2020-2022</p>
+        <p>Co-leader of ‘SPSC Debating Society’ | 2018-2020</p>
+        <p>Leader of ‘SPSC Cultral Club’ | 2018-2020</p>
+        <p>Member of ‘SPSC Math Club’ | 2018-2020</p>
+    </section>
+
+    <section id="skills" class="section glow-box">
+        <h2>Technical Skills</h2>
+        <p>Mobile Application Development, XML, Java, C Programig, SQL, MS Office</p>
+    </section>
+
+    <section id="interests" class="section glow-box">
+        <h2>Interests</h2>
+        <p>Coding, Photography, Singing, Instruments Playing, Graphics & Design</p>
+    </section>
+
+    <section id="projects" class="section glow-box">
+        <h2>My Projects</h2>
+        <div class="project">
+            <h3>Project 1</h3>
+            <p>Developed a android app named ServEase</p>
+        </div>
+        <div class="project">
+            <h3>Project 2</h3>
+            <p>Made an arduino based project named "Radar Detector"</p>
+        </div>
+    </section>
+    <section id="achievements" class="section glow-box">
+        <h2>Achievements</h2>
+        <p>Achieved 2nd Runner Up position in Odoo X CHARUSAT 24 Hours Hackathon | 2nd March, 2025</p>
+        <p>Got certified for making a project named “Radar Detector” using Arduino Uno R3 in GTU-SET Idea Lab.</p>
+        <p>Successfully completed Infosys course by Springboard | June 2024</p> 
+        <p>Successfully completed Infosys course by Springboard | June 2024</p> 
+        <p>Successfully completed NPTEL course by IIT | April 2024</p> 
+        <p>Participated in ISRO Quiz | September 2023</p> 
+        <p>Got 1st position in ‘Essay Writing Competition’ arranged by ‘Department of Narcotics Control, Bangladesh’| 26th June, 2019</p> 
+        <p>Got 2nd position in ‘Instant Speech’ at St. Placid’s School & College | 17th March, 2018</p> 
+        <p>Got 1st position in ‘Science Fair’ | 16th March, 2018</p> 
+        <p>Participated ‘National High School ICT Quiz contest’ | 18th March, 2016</p> 
+    </section>
+    
+    <section id="resume" class="section glow-box">
+        <h2>Resume</h2>
+        <a href="resume.pdf" target="_blank" class="resume-btn">View My Resume</a>
+    </section>
+    
+    <section id="contact" class="section glow-box">
+        <h2>Contact Me</h2>
+        <div class="social-icons">
+            <a href=https://wa.me/917003418289?text=Hello%20Pratim!%20I%20want%20to%20connect%20with%20you. target="_blank">
+                <i class="fab fa-whatsapp"></i>
+            </a>
+            <a href="https://www.facebook.com/pratimnagpn" target="_blank">
+                <i class="fab fa-facebook-f"></i>
+            </a>
+            <a href="https://www.linkedin.com/in/pratimpn/" target="_blank">
+                <i class="fab fa-linkedin-in"></i>
+            </a>
+        </div>
+        
+    </section>
+    
+    <footer>
+        <p>&copy; 2025 Pratim Nag. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>
